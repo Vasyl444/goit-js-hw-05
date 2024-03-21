@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 const sortByDescendingFriendCount = (users) => users.toSorted((firstArrayFriends, secondArrayFriends) =>
         secondArrayFriends.friends.length - firstArrayFriends.friends.length) ;
 console.log(

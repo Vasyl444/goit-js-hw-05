@@ -1,8 +1,8 @@
-"use script";
+"use strict";
 const getTotalBalanceByGender = (users, gender) => {
     const balanceSum = users
         .filter((user) => user.gender === gender)
-        .reduce((value, user) => value += user.balance, 0);
+        .reduce((value, user) => value + user.balance, 0);
     return balanceSum;
 };
 const clients = [
